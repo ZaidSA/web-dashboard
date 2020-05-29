@@ -1,10 +1,10 @@
 <!-- views/includes/nav.ejs -->
 <nav class="navbar navbar-inverse" role="navigation" style="padding-left:130px;">
-      <ul class="nav navbar-nav">
-      <li class="active"><a href="/">Home<span class="sr-only">(current)</span></a></li>
-      <li><a href="/design">Design </a></li>
-      <li><a href="/dashboards">Dashboards </a></li>
-      <li><a href="/about">About us</a></li>
-      <li><a href="/contact">Contact us</a></li>
-    </ul>
+  <ul class="nav navbar-nav">
+    <li <% if (route === '/') { %>class="active" <% } %>><a href="/">Home</a></li>
+    <li <% if (route === '/design') { %>class="active" <% } %>><a href="/design">Design </a></li>
+    <li <% if (route === '/dashboards') { %>class="active" <% } %>><a href="/dashboards">Dashboards </a></li>
+    <li <% if (route === '/about') { %>class="active" <% } %>><a href="/about">About us</a></li>
+    <li <% if (route === '/contact') { %>class="active" <% } %>><a href="/contact">Contact us</a></li>
+  </ul>
 </nav>

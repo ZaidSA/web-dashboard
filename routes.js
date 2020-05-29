@@ -8,23 +8,23 @@ router.use(function (req, res, next) {
 })
 
 router.get('/', function (req, res) {
-  res.render('pages/index')
+  res.render('pages/index', {route: req.path})
 })
 
 router.get('/design', function (req, res) { //MSR Design
-  res.render('pages/design')
+  res.render('pages/design', {route: req.path})
 })
 
 router.get('/dashboards', function (req, res) { //References
-  res.render('pages/dashboards')
+  res.render('pages/dashboards', {route: req.path})
 })
 
 router.get('/about', function (req, res) {
-  res.render('pages/about')
+  res.render('pages/about', {route: req.path})
 })
 
 router.get('/contact', function (req, res) {
-  res.render('pages/contact')
+  res.render('pages/contact', {route: req.path})
 })
 
 
